@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Our British Craftsmanship &amp; Heritage | Kensington &amp; Devon</title>
+  <meta name="description" content="Discover the British heritage, natural materials and artisanal techniques behind Kensington &amp; Devon handcrafted beds and luxury mattresses.">
+  <meta name="theme-color" content="#252525">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛏️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <aside class="announcement-bar px-3" aria-label="Announcement">
+    <div class="container-fluid text-center">
+      <span class="badge-highlight me-1"><i class="bi bi-truck me-1"></i> FREE UK DELIVERY</span>
+      ON SELECTED BEDS & MATTRESSES &bull; 
+      <span class="d-none d-sm-inline ms-1">10-YEAR CRAFTSMANSHIP GUARANTEE</span>
+    </div>
+  </aside>
+
+  <!-- Sticky Header -->
+  <header class="site-header" id="mainHeader">
+    <div class="container-xl">
+      <div class="d-flex align-items-center justify-content-between py-2 py-lg-3">
+        <div class="d-lg-none">
+          <button class="header-icon-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNavDrawer" aria-label="Open Navigation">
+            <i class="bi bi-list fs-2"></i>
+          </button>
+        </div>
+
+        <div class="header-brand">
+          <a href="index.html" class="text-decoration-none d-inline-block">
+            <span class="brand-title">Kensington &amp; Devon</span>
+            <span class="brand-subtitle">Fine British Sleepmakers</span>
+          </a>
+        </div>
+
+        <nav class="main-nav d-none d-lg-flex align-items-center justify-content-center" aria-label="Main Navigation">
+          <ul class="nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="shop.html?category=beds">Beds</a></li>
+            <li class="nav-item"><a class="nav-link" href="shop.html?category=mattresses">Mattresses</a></li>
+            <li class="nav-item"><a class="nav-link" href="shop.html?category=divan-beds">Divan Beds</a></li>
+            <li class="nav-item"><a class="nav-link" href="shop.html?category=ottoman-beds">Ottoman Beds</a></li>
+            <li class="nav-item"><a class="nav-link" href="shop.html?category=headboards">Headboards</a></li>
+            <li class="nav-item"><a class="nav-link" href="shop.html?category=bedroom-furniture">Bedroom Furniture</a></li>
+            <li class="nav-item"><a class="nav-link nav-sale" href="shop.html?sale=true">Sale</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <button class="header-icon-btn" type="button" data-bs-toggle="modal" data-bs-target="#searchModal" aria-label="Search">
+            <i class="bi bi-search"></i>
+          </button>
+          <button class="header-icon-btn d-none d-sm-inline-flex" type="button" data-bs-toggle="modal" data-bs-target="#accountModal" aria-label="Account">
+            <i class="bi bi-person"></i>
+          </button>
+          <button class="header-icon-btn" type="button" data-action="open-wishlist" aria-label="Wishlist">
+            <i class="bi bi-heart"></i>
+            <span class="icon-badge wishlist-counter-badge" style="display: none;">0</span>
+          </button>
+          <button class="header-icon-btn" type="button" data-action="open-cart" aria-label="Shopping Basket">
+            <i class="bi bi-bag"></i>
+            <span class="icon-badge cart-counter-badge" style="display: none;">0</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Drawer -->
+  <div class="offcanvas offcanvas-start mobile-nav-drawer" tabindex="-1" id="mobileNavDrawer">
+    <div class="offcanvas-header border-bottom p-3">
+      <div>
+        <span class="font-serif fw-bold fs-5 text-charcoal d-block">Kensington &amp; Devon</span>
+        <span class="small text-gold text-uppercase letter-spacing-1">Fine British Sleepmakers</span>
+      </div>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body p-0">
+      <nav class="d-flex flex-column">
+        <a href="index.html" class="mobile-nav-link">Home <i class="bi bi-chevron-right text-muted small"></i></a>
+        <a href="shop.html?category=beds" class="mobile-nav-link">Beds <i class="bi bi-chevron-right text-muted small"></i></a>
+        <a href="shop.html?category=mattresses" class="mobile-nav-link">Mattresses <i class="bi bi-chevron-right text-muted small"></i></a>
+        <a href="shop.html?category=divan-beds" class="mobile-nav-link">Divan Beds <i class="bi bi-chevron-right text-muted small"></i></a>
+        <a href="shop.html?category=ottoman-beds" class="mobile-nav-link">Ottoman Beds <i class="bi bi-chevron-right text-muted small"></i></a>
+        <a href="shop.html?category=headboards" class="mobile-nav-link">Headboards <i class="bi bi-chevron-right text-muted small"></i></a>
+        <a href="shop.html?category=bedroom-furniture" class="mobile-nav-link">Bedroom Furniture <i class="bi bi-chevron-right text-muted small"></i></a>
+        <a href="shop.html?sale=true" class="mobile-nav-link text-sale fw-bold">Luxury Sale <i class="bi bi-chevron-right text-sale small"></i></a>
+        <a href="about.html" class="mobile-nav-link active">Our British Heritage <i class="bi bi-chevron-right text-muted small"></i></a>
+        <a href="contact.html" class="mobile-nav-link">Showrooms &amp; Contact <i class="bi bi-chevron-right text-muted small"></i></a>
+      </nav>
+    </div>
+  </div>
+
+  <main>
+    <!-- Editorial Hero -->
+    <section class="position-relative py-5 bg-charcoal text-white overflow-hidden" style="min-height: 480px; display: flex; align-items: center;">
+      <div class="position-absolute top-0 start-0 w-100 h-100 opacity-25">
+        <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1920&q=80" alt="British luxury bedroom craftsmanship" class="w-100 h-100 object-fit-cover">
+      </div>
+      <div class="container-xl position-relative z-2 text-center py-lg-4">
+        <span class="text-gold text-uppercase small fw-bold letter-spacing-2 d-block mb-2">Our Story &bull; Founded in London 2012</span>
+        <h1 class="font-serif display-4 text-white mb-3">The Art of British Rest</h1>
+        <p class="mx-auto text-light opacity-75 fs-5" style="max-width: 680px;">
+          We believe the bedroom is not simply a room of furniture, but a private sanctuary where the mind and body find restorative equilibrium.
+        </p>
+      </div>
+    </section>
+
+    <!-- Heritage Narrative -->
+    <section class="py-5 bg-pure-white">
+      <div class="container-xl py-lg-4">
+        <div class="row g-4 g-lg-5 align-items-center">
+          <div class="col-12 col-lg-6">
+            <span class="text-gold text-uppercase small fw-bold letter-spacing-1 d-block mb-2">Uncompromising Standards</span>
+            <h2 class="font-serif display-6 text-charcoal mb-3">Centuries of Upholstery Tradition, Engineered for Contemporary Rest.</h2>
+            <p class="text-muted mb-3">
+              Kensington &amp; Devon was established with an ambition to challenge throwaway bedroom retail. While mass production turned toward hollow flat-packs and synthetic foams, our craftspeople in Yorkshire and Wiltshire preserved traditional bench-made joinery, hand-tied springs, and organic natural fibres.
+            </p>
+            <p class="text-muted mb-4">
+              Every bedstead we build begins with slow-grown Scandinavian timber, selected for its tight ring density and structural resilience. Every button on our Chesterfield divans is pulled by hand using heavy-gauge waxed twine. The result is furniture that endures gracefully across decades of nightly slumber.
+            </p>
+            <div class="d-flex gap-4 border-top pt-3">
+              <div>
+                <span class="font-serif fs-2 fw-bold text-gold d-block">10-Year</span>
+                <span class="small text-muted">Frame &amp; Spring Guarantee</span>
+              </div>
+              <div>
+                <span class="font-serif fs-2 fw-bold text-gold d-block">100%</span>
+                <span class="small text-muted">FSC® Sustainable Timbers</span>
+              </div>
+              <div>
+                <span class="font-serif fs-2 fw-bold text-gold d-block">0%</span>
+                <span class="small text-muted">Landfill Waste Objective</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="position-relative rounded overflow-hidden shadow-lg" style="aspect-ratio: 4/3;">
+              <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1000&q=80" alt="Master craftsperson tailoring luxury bedstead" class="w-100 h-100 object-fit-cover">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The 4 Pillars of Our Craft -->
+    <section class="py-5 bg-ivory border-top border-bottom">
+      <div class="container-xl py-lg-4">
+        <div class="text-center mb-5">
+          <span class="text-gold text-uppercase small fw-bold letter-spacing-1 d-block mb-1">Artisanal Process</span>
+          <h2 class="font-serif h1 text-charcoal">The Anatomy of a Kensington &amp; Devon Bed</h2>
+        </div>
+
+        <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-4">
+          
+          <div class="col">
+            <div class="bg-white p-4 rounded border h-100">
+              <span class="font-serif fs-1 text-gold fw-bold d-block mb-2">01</span>
+              <h3 class="font-serif h5 text-charcoal mb-2">Solid FSC® Framing</h3>
+              <p class="small text-muted mb-0">
+                Mortise-and-tenon reinforced Scandinavian pine and English ash timbers. Zero flimsy chipboard or cheap staples. Tested to withstand up to 450kg dynamic loads without creaks.
+              </p>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="bg-white p-4 rounded border h-100">
+              <span class="font-serif fs-1 text-gold fw-bold d-block mb-2">02</span>
+              <h3 class="font-serif h5 text-charcoal mb-2">Calico Pocket Coils</h3>
+              <p class="small text-muted mb-0">
+                Up to 5,000 independent responsive British steel coils nested in breathable cotton pockets. Yielding precisely beneath your shoulders while elevating the lumbar spine.
+              </p>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="bg-white p-4 rounded border h-100">
+              <span class="font-serif fs-1 text-gold fw-bold d-block mb-2">03</span>
+              <h3 class="font-serif h5 text-charcoal mb-2">Pure Natural Fillings</h3>
+              <p class="small text-muted mb-0">
+                Fleece wool from Yorkshire Dales, breathable flax linen, organic cotton, and Mongolian cashmere. Chemical-free natural flame resistance meeting UK BS 7177 fire safety.
+              </p>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="bg-white p-4 rounded border h-100">
+              <span class="font-serif fs-1 text-gold fw-bold d-block mb-2">04</span>
+              <h3 class="font-serif h5 text-charcoal mb-2">Master Hand-Tufting</h3>
+              <p class="small text-muted mb-0">
+                Traditional felt rosettes and hand side-stitched borders sewn by our senior seamstresses to prevent mattress edge roll-off and maintain permanent internal alignment.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Natural Materials & Sustainability Section -->
+    <section class="py-5 bg-pure-white">
+      <div class="container-xl py-lg-4">
+        <div class="row g-4 g-lg-5 align-items-center">
+          <div class="col-12 col-lg-6 order-lg-2">
+            <span class="text-gold text-uppercase small fw-bold letter-spacing-1 d-block mb-2">Conscious Luxury</span>
+            <h2 class="font-serif display-6 text-charcoal mb-3">Rest Easy Knowing Your Bed Leaves a Gentle Footprint.</h2>
+            <p class="text-muted mb-3">
+              We reject polyurethane foams that release VOC off-gassing and linger in UK landfills for half a millennium. Instead, we champion natural, circular biodegradable fibres that breathe naturally through the night.
+            </p>
+            <ul class="list-unstyled text-muted small mb-4">
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-gold me-2"></i><strong>Yorkshire Fleece Wool:</strong> Naturally thermo-regulating, anti-microbial and resistant to dust mites.</li>
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-gold me-2"></i><strong>AquaClean® Velvets:</strong> Stain resistant technology utilizing harmless water rather than harsh toxic chemical sprays.</li>
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-gold me-2"></i><strong>Zero Landfill Mattress Recycling:</strong> We dismantle and repurpose old mattresses upon delivering your new sleep system.</li>
+            </ul>
+            <a href="shop.html?category=mattresses" class="btn btn-dark">Explore 100% Natural Mattresses</a>
+          </div>
+          <div class="col-12 col-lg-6 order-lg-1">
+            <div class="position-relative rounded overflow-hidden shadow-lg" style="aspect-ratio: 4/3;">
+              <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=1000&q=80" alt="Natural wool mattress tufting close-up" class="w-100 h-100 object-fit-cover">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Showrooms Callout -->
+    <section class="py-5 bg-ivory text-center">
+      <div class="container-sm" style="max-width: 680px;">
+        <span class="text-gold text-uppercase small fw-bold letter-spacing-1 d-block mb-2">Experience In Person</span>
+        <h2 class="font-serif h1 text-charcoal mb-3">Visit Our Chelsea Flagship Showroom</h2>
+        <p class="text-muted mb-4">
+          Lie back on our full collection, test our firmness levels in private sleep pods, and browse our tactile library of over 100 fine British fabrics with a specialist sleep consultant.
+        </p>
+        <div class="d-flex justify-content-center gap-3 flex-wrap">
+          <a href="contact.html#showrooms" class="btn btn-gold">Book Private Consultation</a>
+          <a href="contact.html#swatches" class="btn btn-outline-dark">Order Free Swatches</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container-xl">
+      <div class="row g-4 g-lg-5">
+        <div class="col-12 col-md-6 col-lg-4">
+          <h3 class="footer-heading">Kensington &amp; Devon</h3>
+          <p class="mb-3 text-light opacity-75">
+            Makers of bespoke British beds and sleep surfaces since 2012. Handcrafted in Yorkshire and Wiltshire with 10-year craftsmanship warranties.
+          </p>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2">
+          <h4 class="footer-heading">Collections</h4>
+          <ul class="footer-links">
+            <li><a href="shop.html?category=divan-beds">Divan Beds</a></li>
+            <li><a href="shop.html?category=ottoman-beds">Ottoman Beds</a></li>
+            <li><a href="shop.html?category=upholstered-beds">Upholstered Beds</a></li>
+            <li><a href="shop.html?category=mattresses">Pocket Mattresses</a></li>
+            <li><a href="shop.html?category=headboards">Headboards</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3 col-lg-3">
+          <h4 class="footer-heading">Customer Care</h4>
+          <ul class="footer-links">
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="contact.html#swatches">Free Fabric Swatches</a></li>
+            <li><a href="contact.html#faq">100-Night Sleep Trial</a></li>
+            <li><a href="contact.html#faq">White Glove Delivery</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <h4 class="footer-heading">London Showroom</h4>
+          <p class="mb-1 text-light opacity-75"><i class="bi bi-geo-alt text-gold me-2"></i> 24 King's Road, Chelsea, London SW3 4UD</p>
+          <p class="mb-2 text-light opacity-75"><i class="bi bi-telephone text-gold me-2"></i> 0800 246 8920</p>
+        </div>
+      </div>
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <div>&copy; 2026 Kensington &amp; Devon Sleep Ltd. All rights reserved. &bull; Demo Store</div>
+        <div class="d-flex gap-2">
+          <span class="payment-badge">Visa</span>
+          <span class="payment-badge">Mastercard</span>
+          <span class="payment-badge">Apple Pay</span>
+          <span class="payment-badge">Klarna.</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modals & Drawers -->
+  <div class="modal fade" id="searchModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content border-0 shadow-lg">
+        <div class="modal-header border-bottom py-3">
+          <div class="input-group">
+            <span class="input-group-text bg-transparent border-0 text-gold fs-4"><i class="bi bi-search"></i></span>
+            <input type="search" class="form-control border-0 fs-5 ps-1" id="globalSearchInput" placeholder="Search luxury beds, pocket mattresses...">
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-0" id="globalSearchResults" style="max-height: 480px; overflow-y: auto;"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="offcanvas offcanvas-end cart-drawer" tabindex="-1" id="cartDrawer">
+    <div class="offcanvas-header cart-drawer-header">
+      <div class="d-flex align-items-center gap-2">
+        <i class="bi bi-bag fs-5 text-gold"></i>
+        <h5 class="offcanvas-title font-serif mb-0">Shopping Basket</h5>
+      </div>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div id="cartFreeDeliveryNotice" class="px-3 pt-3"></div>
+    <div class="offcanvas-body p-0 d-flex flex-column">
+      <div id="cartDrawerEmpty" class="text-center p-5 my-auto d-none">
+        <i class="bi bi-bag-x fs-1 text-muted opacity-50 d-block mb-3"></i>
+        <h5 class="font-serif text-charcoal mb-2">Your basket is empty</h5>
+        <a href="shop.html" class="btn btn-gold" data-bs-dismiss="offcanvas">Explore Collection</a>
+      </div>
+      <div id="cartDrawerItems" class="flex-grow-1 overflow-auto"></div>
+      <div id="cartDrawerFooter" class="cart-drawer-footer">
+        <div class="d-flex justify-content-between mb-2 small"><span class="text-muted">Subtotal</span><span id="cartDrawerSubtotal" class="fw-semibold">£0</span></div>
+        <div class="d-flex justify-content-between mb-2 small"><span class="text-muted">UK Delivery</span><span id="cartDrawerDelivery" class="text-success fw-semibold">FREE</span></div>
+        <div class="d-flex justify-content-between mb-3 border-top pt-2"><span class="fw-bold font-serif fs-5">Total</span><span id="cartDrawerTotal" class="fw-bold font-serif fs-5 text-charcoal">£0</span></div>
+        <button type="button" class="btn btn-gold w-100 py-3 mb-2" id="btnProceedCheckout">PROCEED TO CHECKOUT</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="offcanvas offcanvas-end cart-drawer" tabindex="-1" id="wishlistDrawer">
+    <div class="offcanvas-header cart-drawer-header">
+      <div class="d-flex align-items-center gap-2">
+        <i class="bi bi-heart fs-5 text-gold"></i>
+        <h5 class="offcanvas-title font-serif mb-0">Saved to Wishlist</h5>
+      </div>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body p-0 d-flex flex-column">
+      <div id="wishlistDrawerEmpty" class="text-center p-5 my-auto d-none">
+        <i class="bi bi-heart fs-1 text-muted opacity-50 d-block mb-3"></i>
+        <h5 class="font-serif text-charcoal mb-2">Your wishlist is empty</h5>
+        <a href="shop.html" class="btn btn-gold" data-bs-dismiss="offcanvas">Browse Products</a>
+      </div>
+      <div id="wishlistDrawerItems" class="flex-grow-1 overflow-auto"></div>
+    </div>
+  </div>
+
+  <button id="backToTopBtn" class="back-to-top" aria-label="Back to top"><i class="bi bi-chevron-up"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

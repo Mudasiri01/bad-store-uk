@@ -1,0 +1,1447 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Kensington & Devon | Luxury Beds, Mattresses & Bedroom Furniture | UK</title>
+  <meta name="description" content="Discover handcrafted British luxury beds, orthopaedic and hybrid mattresses, storage divans and ottoman beds. Free UK white-glove delivery on selected collections.">
+  <meta name="theme-color" content="#252525">
+
+  <!-- Favicon icon placeholder -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛏️</text></svg>">
+
+  <!-- Google Fonts: Playfair Display & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS & Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom Luxury Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       ANNOUNCEMENT BAR
+       ======================================================================== -->
+  <aside class="announcement-bar px-3" aria-label="Announcement">
+    <div class="container-fluid text-center">
+      <span class="badge-highlight me-1"><i class="bi bi-truck me-1"></i> FREE UK DELIVERY</span>
+      ON SELECTED BEDS & MATTRESSES &bull; 
+      <span class="d-none d-sm-inline ms-1">100-NIGHT SLEEP TRIAL AVAILABLE</span>
+    </div>
+  </aside>
+
+  <!-- ========================================================================
+       STICKY HEADER & NAVIGATION
+       ======================================================================== -->
+  <header class="site-header" id="mainHeader">
+    <div class="container-xl">
+      <div class="d-flex align-items-center justify-content-between py-2 py-lg-3">
+        
+        <!-- Mobile Hamburger Toggle -->
+        <div class="d-lg-none">
+          <button class="header-icon-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNavDrawer" aria-controls="mobileNavDrawer" aria-label="Open Navigation Menu">
+            <i class="bi bi-list fs-2"></i>
+          </button>
+        </div>
+
+        <!-- Brand Identity Logo -->
+        <div class="header-brand">
+          <a href="index.html" class="text-decoration-none d-inline-block">
+            <span class="brand-title">Kensington &amp; Devon</span>
+            <span class="brand-subtitle">Fine British Sleepmakers</span>
+          </a>
+        </div>
+
+        <!-- Desktop Navigation Bar -->
+        <nav class="main-nav d-none d-lg-flex align-items-center justify-content-center" aria-label="Main Navigation">
+          <ul class="nav">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="shop.html?category=beds">Beds</a></li>
+            <li class="nav-item"><a class="nav-link" href="shop.html?category=mattresses">Mattresses</a></li>
+            <li class="nav-item"><a class="nav-link" href="shop.html?category=divan-beds">Divan Beds</a></li>
+            <li class="nav-item"><a class="nav-link" href="shop.html?category=ottoman-beds">Ottoman Beds</a></li>
+            <li class="nav-item"><a class="nav-link" href="shop.html?category=headboards">Headboards</a></li>
+            <li class="nav-item"><a class="nav-link" href="shop.html?category=bedroom-furniture">Bedroom Furniture</a></li>
+            <li class="nav-item"><a class="nav-link nav-sale" href="shop.html?sale=true">Sale</a></li>
+          </ul>
+        </nav>
+
+        <!-- Right Side Utility Icons -->
+        <div class="header-actions">
+          <!-- Search Trigger -->
+          <button class="header-icon-btn" type="button" data-bs-toggle="modal" data-bs-target="#searchModal" aria-label="Search Beds and Mattresses">
+            <i class="bi bi-search"></i>
+          </button>
+          
+          <!-- Account Trigger -->
+          <button class="header-icon-btn d-none d-sm-inline-flex" type="button" data-bs-toggle="modal" data-bs-target="#accountModal" aria-label="Customer Account">
+            <i class="bi bi-person"></i>
+          </button>
+
+          <!-- Wishlist Trigger -->
+          <button class="header-icon-btn" type="button" data-action="open-wishlist" aria-label="View Wishlist">
+            <i class="bi bi-heart"></i>
+            <span class="icon-badge wishlist-counter-badge" style="display: none;">0</span>
+          </button>
+
+          <!-- Shopping Basket Trigger -->
+          <button class="header-icon-btn" type="button" data-action="open-cart" aria-label="View Shopping Basket">
+            <i class="bi bi-bag"></i>
+            <span class="icon-badge cart-counter-badge" style="display: none;">0</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       MOBILE NAVIGATION SLIDE-OUT DRAWER
+       ======================================================================== -->
+  <div class="offcanvas offcanvas-start mobile-nav-drawer" tabindex="-1" id="mobileNavDrawer" aria-labelledby="mobileNavDrawerLabel">
+    <div class="offcanvas-header border-bottom p-3">
+      <div class="text-start">
+        <span class="font-serif fw-bold fs-5 text-charcoal d-block">Kensington &amp; Devon</span>
+        <span class="small text-gold text-uppercase letter-spacing-1">London &bull; Yorkshire &bull; Wiltshire</span>
+      </div>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body p-0">
+      <div class="p-3 bg-white border-bottom">
+        <div class="input-group">
+          <input type="text" class="form-control form-control-sm" placeholder="Search beds, mattresses..." data-bs-toggle="modal" data-bs-target="#searchModal">
+          <button class="btn btn-dark btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="bi bi-search"></i></button>
+        </div>
+      </div>
+      <nav class="d-flex flex-column" aria-label="Mobile Navigation Menu">
+        <a href="index.html" class="mobile-nav-link active">Home <i class="bi bi-chevron-right text-muted small"></i></a>
+        <a href="shop.html?category=beds" class="mobile-nav-link">Beds <i class="bi bi-chevron-right text-muted small"></i></a>
+        <a href="shop.html?category=mattresses" class="mobile-nav-link">Mattresses <i class="bi bi-chevron-right text-muted small"></i></a>
+        <a href="shop.html?category=divan-beds" class="mobile-nav-link">Divan Beds <i class="bi bi-chevron-right text-muted small"></i></a>
+        <a href="shop.html?category=ottoman-beds" class="mobile-nav-link">Ottoman Beds <i class="bi bi-chevron-right text-muted small"></i></a>
+        <a href="shop.html?category=headboards" class="mobile-nav-link">Headboards <i class="bi bi-chevron-right text-muted small"></i></a>
+        <a href="shop.html?category=bedroom-furniture" class="mobile-nav-link">Bedroom Furniture <i class="bi bi-chevron-right text-muted small"></i></a>
+        <a href="shop.html?sale=true" class="mobile-nav-link text-sale fw-bold">Luxury Sale <i class="bi bi-chevron-right text-sale small"></i></a>
+        <a href="about.html" class="mobile-nav-link">Our British Heritage <i class="bi bi-chevron-right text-muted small"></i></a>
+        <a href="contact.html" class="mobile-nav-link">Showrooms &amp; Contact <i class="bi bi-chevron-right text-muted small"></i></a>
+      </nav>
+      
+      <div class="p-3 mt-3 bg-cream border-top">
+        <p class="small text-muted mb-2">UK Sleep Advisory Concierge:</p>
+        <p class="mb-1 fw-bold font-serif text-charcoal"><i class="bi bi-telephone-inbound me-2 text-gold"></i>0800 246 8920</p>
+        <p class="small text-muted mb-0">Monday – Saturday: 9am – 6pm BST</p>
+      </div>
+    </div>
+  </div>
+
+  <main id="mainContent">
+
+    <!-- ======================================================================
+         5. HERO SECTION
+         ====================================================================== -->
+    <section class="hero-section" aria-label="Welcome Hero">
+      <div class="hero-bg-media">
+        <picture>
+          <source media="(max-width: 767.98px)" srcset="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80">
+          <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=2000&q=85" alt="Contemporary luxury British bedroom with upholstered king bed and warm natural lighting" loading="eager" width="2000" height="1200">
+        </picture>
+      </div>
+      <div class="hero-overlay"></div>
+
+      <div class="container-xl position-relative">
+        <div class="row">
+          <div class="col-12 col-md-10 col-lg-7 hero-content">
+            <div class="hero-pill-badge">
+              <i class="bi bi-gem text-gold"></i> Handcrafted in Great Britain
+            </div>
+            <h1 class="hero-title font-serif text-charcoal">
+              Sleep Better.<br>
+              <em>Live Beautifully.</em>
+            </h1>
+            <p class="hero-subtitle">
+              Discover beautifully crafted beds and premium mattresses designed to transform your bedroom into a sanctuary of comfort.
+            </p>
+            <div class="d-flex flex-wrap gap-3">
+              <a href="shop.html?category=beds" class="btn btn-gold">
+                SHOP BEDS <i class="bi bi-arrow-right ms-1"></i>
+              </a>
+              <a href="shop.html?category=mattresses" class="btn btn-outline-dark">
+                EXPLORE MATTRESSES
+              </a>
+            </div>
+
+            <!-- Trust Micro-Pills -->
+            <div class="hero-trust-bar">
+              <div class="trust-item">
+                <i class="bi bi-award text-gold fs-5"></i>
+                <span>10-Year Craftsmanship Guarantee*</span>
+              </div>
+              <div class="trust-item">
+                <i class="bi bi-moon-stars text-gold fs-5"></i>
+                <span>100-Night Risk-Free Sleep Trial*</span>
+              </div>
+              <div class="trust-item">
+                <i class="bi bi-truck text-gold fs-5"></i>
+                <span>White-Glove 2-Person UK Delivery</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         6. SHOP BY CATEGORY
+         ====================================================================== -->
+    <section class="py-5 bg-pure-white" aria-labelledby="categorySectionHeading">
+      <div class="container-xl py-lg-4">
+        <div class="text-center mb-4 mb-lg-5">
+          <span class="text-gold text-uppercase small fw-bold letter-spacing-2 d-block mb-1">Tailored Comfort</span>
+          <h2 id="categorySectionHeading" class="font-serif h1 mb-2">Shop by Category</h2>
+          <p class="text-muted mx-auto" style="max-width: 580px;">
+            From sumptuous deep-tufted divans to space-saving hydraulic ottomans, discover furniture built for restorative British living.
+          </p>
+        </div>
+
+        <!-- 6 Category Cards (3 columns desktop, 2 columns mobile) -->
+        <div class="row g-3 g-md-4 row-cols-2 row-cols-md-3">
+          
+          <!-- Category 1: Divan Beds -->
+          <div class="col">
+            <a href="shop.html?category=divan-beds" class="category-card d-block text-decoration-none">
+              <div class="category-image-wrap">
+                <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=700&q=80" alt="Luxury Divan Beds with upholstered storage bases" loading="lazy">
+                <div class="category-card-overlay">
+                  <h3 class="category-title font-serif">Divan Beds</h3>
+                  <span class="category-link">Explore Collection <i class="bi bi-arrow-right"></i></span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Category 2: Ottoman Beds -->
+          <div class="col">
+            <a href="shop.html?category=ottoman-beds" class="category-card d-block text-decoration-none">
+              <div class="category-image-wrap">
+                <img src="https://images.unsplash.com/photo-1616046229478-9901c5536a45?auto=format&fit=crop&w=700&q=80" alt="Modern Ottoman Storage Beds with hydraulic lift" loading="lazy">
+                <div class="category-card-overlay">
+                  <h3 class="category-title font-serif">Ottoman Beds</h3>
+                  <span class="category-link">Explore Collection <i class="bi bi-arrow-right"></i></span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Category 3: Upholstered Beds -->
+          <div class="col">
+            <a href="shop.html?category=upholstered-beds" class="category-card d-block text-decoration-none">
+              <div class="category-image-wrap">
+                <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=700&q=80" alt="Upholstered Beds in Belgian linen and velvet" loading="lazy">
+                <div class="category-card-overlay">
+                  <h3 class="category-title font-serif">Upholstered Beds</h3>
+                  <span class="category-link">Explore Collection <i class="bi bi-arrow-right"></i></span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Category 4: Mattresses -->
+          <div class="col">
+            <a href="shop.html?category=mattresses" class="category-card d-block text-decoration-none">
+              <div class="category-image-wrap">
+                <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=700&q=80" alt="Pocket sprung and orthopaedic mattresses" loading="lazy">
+                <div class="category-card-overlay">
+                  <h3 class="category-title font-serif">Mattresses</h3>
+                  <span class="category-link">Explore Collection <i class="bi bi-arrow-right"></i></span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Category 5: Headboards -->
+          <div class="col">
+            <a href="shop.html?category=headboards" class="category-card d-block text-decoration-none">
+              <div class="category-image-wrap">
+                <img src="https://images.unsplash.com/photo-1582582621959-48d27397dc69?auto=format&fit=crop&w=700&q=80" alt="Boutique hotel height upholstered headboards" loading="lazy">
+                <div class="category-card-overlay">
+                  <h3 class="category-title font-serif">Headboards</h3>
+                  <span class="category-link">Explore Collection <i class="bi bi-arrow-right"></i></span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Category 6: Bedroom Furniture -->
+          <div class="col">
+            <a href="shop.html?category=bedroom-furniture" class="category-card d-block text-decoration-none">
+              <div class="category-image-wrap">
+                <img src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&w=700&q=80" alt="Fluted solid oak bedside tables and storage benches" loading="lazy">
+                <div class="category-card-overlay">
+                  <h3 class="category-title font-serif">Bedroom Furniture</h3>
+                  <span class="category-link">Explore Collection <i class="bi bi-arrow-right"></i></span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         7. BESTSELLER PRODUCTS (8 items with GBP pricing, ratings, badges)
+         ====================================================================== -->
+    <section class="py-5 bg-ivory" aria-labelledby="bestsellersHeading">
+      <div class="container-xl py-lg-4">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-4 mb-lg-5">
+          <div>
+            <span class="text-gold text-uppercase small fw-bold letter-spacing-2 d-block mb-1">British Masterpieces</span>
+            <h2 id="bestsellersHeading" class="font-serif h1 mb-1">Bestseller Products</h2>
+            <p class="text-muted mb-0">Our most celebrated beds, mattresses and bedroom centrepieces.</p>
+          </div>
+          <div class="mt-3 mt-md-0">
+            <a href="shop.html" class="btn btn-outline-dark">
+              View All Collection <i class="bi bi-arrow-right ms-1"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- 8 Bestseller Cards Grid -->
+        <div class="row g-3 g-md-4 row-cols-1 row-cols-sm-2 row-cols-lg-4" id="bestsellerProductsContainer">
+          
+          <!-- Product 1: Luxury Chesterfield Divan Bed -->
+          <div class="col">
+            <article class="product-card">
+              <div class="product-media-wrap">
+                <span class="product-badge-pill badge-gold">BESTSELLER</span>
+                <button class="product-wishlist-btn" type="button" data-action="toggle-wishlist" data-wishlist-id="1" aria-label="Add to Wishlist">
+                  <i class="bi bi-heart"></i>
+                </button>
+                <a href="product.html?id=1">
+                  <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=600&q=80" alt="Luxury Chesterfield Divan Bed in Royal Oatmeal" loading="lazy">
+                </a>
+                <div class="product-quick-view-overlay">
+                  <button type="button" class="btn btn-light btn-sm w-100 shadow-sm" data-action="quick-view" data-product-id="1">
+                    <i class="bi bi-eye me-1"></i> Quick View
+                  </button>
+                </div>
+              </div>
+              <div class="product-info">
+                <div class="product-category-sub">Divan Beds</div>
+                <h3 class="product-title-link">
+                  <a href="product.html?id=1">Luxury Chesterfield Divan Bed</a>
+                </h3>
+                <div class="product-rating">
+                  <span class="text-gold"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                  <span class="text-muted small">4.9 (148 <span class="badge bg-light text-muted border">demo</span>)</span>
+                </div>
+                <div class="product-pricing">
+                  <span class="current-price">£1,199</span>
+                  <span class="previous-price">£1,450</span>
+                </div>
+                <div class="product-actions">
+                  <button type="button" class="btn btn-dark btn-sm" data-action="add-to-cart" data-product-id="1">
+                    <i class="bi bi-bag-plus me-1"></i> Add to Basket
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Product 2: Modern Ottoman Storage Bed -->
+          <div class="col">
+            <article class="product-card">
+              <div class="product-media-wrap">
+                <span class="product-badge-pill badge-sale">SAVE £150</span>
+                <button class="product-wishlist-btn" type="button" data-action="toggle-wishlist" data-wishlist-id="2" aria-label="Add to Wishlist">
+                  <i class="bi bi-heart"></i>
+                </button>
+                <a href="product.html?id=2">
+                  <img src="https://images.unsplash.com/photo-1616046229478-9901c5536a45?auto=format&fit=crop&w=600&q=80" alt="Modern Ottoman Storage Bed in Chalk Bouclé" loading="lazy">
+                </a>
+                <div class="product-quick-view-overlay">
+                  <button type="button" class="btn btn-light btn-sm w-100 shadow-sm" data-action="quick-view" data-product-id="2">
+                    <i class="bi bi-eye me-1"></i> Quick View
+                  </button>
+                </div>
+              </div>
+              <div class="product-info">
+                <div class="product-category-sub">Ottoman Beds</div>
+                <h3 class="product-title-link">
+                  <a href="product.html?id=2">Modern Ottoman Storage Bed</a>
+                </h3>
+                <div class="product-rating">
+                  <span class="text-gold"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></span>
+                  <span class="text-muted small">4.8 (94 <span class="badge bg-light text-muted border">demo</span>)</span>
+                </div>
+                <div class="product-pricing">
+                  <span class="current-price">£899</span>
+                  <span class="previous-price">£1,050</span>
+                </div>
+                <div class="product-actions">
+                  <button type="button" class="btn btn-dark btn-sm" data-action="add-to-cart" data-product-id="2">
+                    <i class="bi bi-bag-plus me-1"></i> Add to Basket
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Product 3: Premium Velvet Upholstered Bed -->
+          <div class="col">
+            <article class="product-card">
+              <div class="product-media-wrap">
+                <span class="product-badge-pill badge-new">NEW ARRIVAL</span>
+                <button class="product-wishlist-btn" type="button" data-action="toggle-wishlist" data-wishlist-id="3" aria-label="Add to Wishlist">
+                  <i class="bi bi-heart"></i>
+                </button>
+                <a href="product.html?id=3">
+                  <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=600&q=80" alt="Premium Velvet Upholstered Bed with brass legs" loading="lazy">
+                </a>
+                <div class="product-quick-view-overlay">
+                  <button type="button" class="btn btn-light btn-sm w-100 shadow-sm" data-action="quick-view" data-product-id="3">
+                    <i class="bi bi-eye me-1"></i> Quick View
+                  </button>
+                </div>
+              </div>
+              <div class="product-info">
+                <div class="product-category-sub">Upholstered Beds</div>
+                <h3 class="product-title-link">
+                  <a href="product.html?id=3">Premium Velvet Upholstered Bed</a>
+                </h3>
+                <div class="product-rating">
+                  <span class="text-gold"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                  <span class="text-muted small">5.0 (62 <span class="badge bg-light text-muted border">demo</span>)</span>
+                </div>
+                <div class="product-pricing">
+                  <span class="current-price">£1,249</span>
+                </div>
+                <div class="product-actions">
+                  <button type="button" class="btn btn-dark btn-sm" data-action="add-to-cart" data-product-id="3">
+                    <i class="bi bi-bag-plus me-1"></i> Add to Basket
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Product 4: Orthopaedic Pocket Sprung Mattress -->
+          <div class="col">
+            <article class="product-card">
+              <div class="product-media-wrap">
+                <span class="product-badge-pill badge-gold">BESTSELLER</span>
+                <button class="product-wishlist-btn" type="button" data-action="toggle-wishlist" data-wishlist-id="4" aria-label="Add to Wishlist">
+                  <i class="bi bi-heart"></i>
+                </button>
+                <a href="product.html?id=4">
+                  <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=600&q=80" alt="Orthopaedic Pocket Sprung Mattress with wool layer" loading="lazy">
+                </a>
+                <div class="product-quick-view-overlay">
+                  <button type="button" class="btn btn-light btn-sm w-100 shadow-sm" data-action="quick-view" data-product-id="4">
+                    <i class="bi bi-eye me-1"></i> Quick View
+                  </button>
+                </div>
+              </div>
+              <div class="product-info">
+                <div class="product-category-sub">Mattresses</div>
+                <h3 class="product-title-link">
+                  <a href="product.html?id=4">Orthopaedic Pocket Sprung Mattress</a>
+                </h3>
+                <div class="product-rating">
+                  <span class="text-gold"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                  <span class="text-muted small">4.9 (215 <span class="badge bg-light text-muted border">demo</span>)</span>
+                </div>
+                <div class="product-pricing">
+                  <span class="current-price">£649</span>
+                  <span class="previous-price">£799</span>
+                </div>
+                <div class="product-actions">
+                  <button type="button" class="btn btn-dark btn-sm" data-action="add-to-cart" data-product-id="4">
+                    <i class="bi bi-bag-plus me-1"></i> Add to Basket
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Product 5: Luxury Memory Foam Mattress -->
+          <div class="col">
+            <article class="product-card">
+              <div class="product-media-wrap">
+                <span class="product-badge-pill badge-accent">CLIMATE TECH</span>
+                <button class="product-wishlist-btn" type="button" data-action="toggle-wishlist" data-wishlist-id="5" aria-label="Add to Wishlist">
+                  <i class="bi bi-heart"></i>
+                </button>
+                <a href="product.html?id=5">
+                  <img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=600&q=80" alt="Luxury Memory Foam Mattress with graphite cooling layer" loading="lazy">
+                </a>
+                <div class="product-quick-view-overlay">
+                  <button type="button" class="btn btn-light btn-sm w-100 shadow-sm" data-action="quick-view" data-product-id="5">
+                    <i class="bi bi-eye me-1"></i> Quick View
+                  </button>
+                </div>
+              </div>
+              <div class="product-info">
+                <div class="product-category-sub">Mattresses</div>
+                <h3 class="product-title-link">
+                  <a href="product.html?id=5">Luxury Memory Foam Mattress</a>
+                </h3>
+                <div class="product-rating">
+                  <span class="text-gold"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></span>
+                  <span class="text-muted small">4.7 (88 <span class="badge bg-light text-muted border">demo</span>)</span>
+                </div>
+                <div class="product-pricing">
+                  <span class="current-price">£749</span>
+                </div>
+                <div class="product-actions">
+                  <button type="button" class="btn btn-dark btn-sm" data-action="add-to-cart" data-product-id="5">
+                    <i class="bi bi-bag-plus me-1"></i> Add to Basket
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Product 6: Contemporary Wingback Headboard -->
+          <div class="col">
+            <article class="product-card">
+              <div class="product-media-wrap">
+                <span class="product-badge-pill badge-accent">HANDCRAFTED</span>
+                <button class="product-wishlist-btn" type="button" data-action="toggle-wishlist" data-wishlist-id="6" aria-label="Add to Wishlist">
+                  <i class="bi bi-heart"></i>
+                </button>
+                <a href="product.html?id=6">
+                  <img src="https://images.unsplash.com/photo-1582582621959-48d27397dc69?auto=format&fit=crop&w=600&q=80" alt="Contemporary Wingback Headboard in Ivory Bouclé" loading="lazy">
+                </a>
+                <div class="product-quick-view-overlay">
+                  <button type="button" class="btn btn-light btn-sm w-100 shadow-sm" data-action="quick-view" data-product-id="6">
+                    <i class="bi bi-eye me-1"></i> Quick View
+                  </button>
+                </div>
+              </div>
+              <div class="product-info">
+                <div class="product-category-sub">Headboards</div>
+                <h3 class="product-title-link">
+                  <a href="product.html?id=6">Contemporary Wingback Headboard</a>
+                </h3>
+                <div class="product-rating">
+                  <span class="text-gold"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                  <span class="text-muted small">4.8 (53 <span class="badge bg-light text-muted border">demo</span>)</span>
+                </div>
+                <div class="product-pricing">
+                  <span class="current-price">£389</span>
+                  <span class="previous-price">£450</span>
+                </div>
+                <div class="product-actions">
+                  <button type="button" class="btn btn-dark btn-sm" data-action="add-to-cart" data-product-id="6">
+                    <i class="bi bi-bag-plus me-1"></i> Add to Basket
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Product 7: Premium Storage Divan Bed -->
+          <div class="col">
+            <article class="product-card">
+              <div class="product-media-wrap">
+                <span class="product-badge-pill badge-gold">POPULAR</span>
+                <button class="product-wishlist-btn" type="button" data-action="toggle-wishlist" data-wishlist-id="7" aria-label="Add to Wishlist">
+                  <i class="bi bi-heart"></i>
+                </button>
+                <a href="product.html?id=7">
+                  <img src="https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=600&q=80" alt="Premium Storage Divan Bed with continental drawers" loading="lazy">
+                </a>
+                <div class="product-quick-view-overlay">
+                  <button type="button" class="btn btn-light btn-sm w-100 shadow-sm" data-action="quick-view" data-product-id="7">
+                    <i class="bi bi-eye me-1"></i> Quick View
+                  </button>
+                </div>
+              </div>
+              <div class="product-info">
+                <div class="product-category-sub">Divan Beds</div>
+                <h3 class="product-title-link">
+                  <a href="product.html?id=7">Premium Storage Divan Bed</a>
+                </h3>
+                <div class="product-rating">
+                  <span class="text-gold"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                  <span class="text-muted small">4.9 (112 <span class="badge bg-light text-muted border">demo</span>)</span>
+                </div>
+                <div class="product-pricing">
+                  <span class="current-price">£1,099</span>
+                </div>
+                <div class="product-actions">
+                  <button type="button" class="btn btn-dark btn-sm" data-action="add-to-cart" data-product-id="7">
+                    <i class="bi bi-bag-plus me-1"></i> Add to Basket
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Product 8: Hybrid Comfort Mattress -->
+          <div class="col">
+            <article class="product-card">
+              <div class="product-media-wrap">
+                <span class="product-badge-pill badge-gold">AWARD WINNER</span>
+                <button class="product-wishlist-btn" type="button" data-action="toggle-wishlist" data-wishlist-id="8" aria-label="Add to Wishlist">
+                  <i class="bi bi-heart"></i>
+                </button>
+                <a href="product.html?id=8">
+                  <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=600&q=80" alt="Hybrid Comfort Mattress with micro springs and gel foam" loading="lazy">
+                </a>
+                <div class="product-quick-view-overlay">
+                  <button type="button" class="btn btn-light btn-sm w-100 shadow-sm" data-action="quick-view" data-product-id="8">
+                    <i class="bi bi-eye me-1"></i> Quick View
+                  </button>
+                </div>
+              </div>
+              <div class="product-info">
+                <div class="product-category-sub">Mattresses</div>
+                <h3 class="product-title-link">
+                  <a href="product.html?id=8">Hybrid Comfort Mattress</a>
+                </h3>
+                <div class="product-rating">
+                  <span class="text-gold"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                  <span class="text-muted small">4.9 (176 <span class="badge bg-light text-muted border">demo</span>)</span>
+                </div>
+                <div class="product-pricing">
+                  <span class="current-price">£829</span>
+                  <span class="previous-price">£980</span>
+                </div>
+                <div class="product-actions">
+                  <button type="button" class="btn btn-dark btn-sm" data-action="add-to-cart" data-product-id="8">
+                    <i class="bi bi-bag-plus me-1"></i> Add to Basket
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         8. PREMIUM PROMOTIONAL BANNER
+         ====================================================================== -->
+    <section class="promo-banner-section" aria-label="Exclusive Promotion">
+      <div class="promo-banner-bg">
+        <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1920&q=80" alt="Elegantly illuminated master bedroom suite" loading="lazy">
+      </div>
+      <div class="container-xl">
+        <div class="promo-content">
+          <span class="text-gold text-uppercase small fw-bold letter-spacing-2 d-block mb-2">Bespoke British Living</span>
+          <h2 class="promo-headline font-serif">Your Dream Bedroom Starts Here.</h2>
+          <p class="promo-desc">
+            Explore our exclusive collection of beautifully designed beds and mattresses, engineered for lifetime comfort and serene slumber.
+          </p>
+          <a href="shop.html" class="btn btn-gold btn-lg">
+            SHOP THE COLLECTION <i class="bi bi-arrow-right ms-2"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         9. WHY CHOOSE US (4 Trust Cards with minimal icons)
+         ====================================================================== -->
+    <section class="py-5 bg-pure-white" aria-labelledby="whyChooseUsHeading">
+      <div class="container-xl py-lg-4">
+        <div class="text-center mb-4 mb-lg-5">
+          <span class="text-gold text-uppercase small fw-bold letter-spacing-2 d-block mb-1">Our Pillars of Excellence</span>
+          <h2 id="whyChooseUsHeading" class="font-serif h1 mb-2">Why Choose Kensington &amp; Devon</h2>
+          <p class="text-muted mx-auto" style="max-width: 580px;">
+            We combine time-honoured British artisanal traditions with transparent customer-first service.
+          </p>
+        </div>
+
+        <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-4">
+          
+          <!-- Card 1 -->
+          <div class="col">
+            <div class="trust-card">
+              <div class="trust-icon-box">
+                <i class="bi bi-truck"></i>
+              </div>
+              <h3 class="trust-title font-serif">Free UK Delivery</h3>
+              <p class="trust-desc">
+                Complimentary 2-person room-of-choice delivery on selected beds and mattresses across mainland UK.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col">
+            <div class="trust-card">
+              <div class="trust-icon-box">
+                <i class="bi bi-gem"></i>
+              </div>
+              <h3 class="trust-title font-serif">Quality Craftsmanship</h3>
+              <p class="trust-desc">
+                Hand-upholstered in West Yorkshire and Wiltshire using sustainably sourced FSC® certified timbers and British wool.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col">
+            <div class="trust-card">
+              <div class="trust-icon-box">
+                <i class="bi bi-shield-check"></i>
+              </div>
+              <h3 class="trust-title font-serif">Secure Online Payments</h3>
+              <p class="trust-desc">
+                Fully encrypted checkout powered by Visa, Mastercard, Apple Pay and interest-free Klarna financing options.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col">
+            <div class="trust-card">
+              <div class="trust-icon-box">
+                <i class="bi bi-headset"></i>
+              </div>
+              <h3 class="trust-title font-serif">Customer Support</h3>
+              <p class="trust-desc">
+                Dedicated UK-based sleep specialists ready to assist you via telephone, email and showroom consultations.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         10. SLEEP COMFORT SECTION (Mattress Guide)
+         ====================================================================== -->
+    <section class="py-5 bg-ivory" aria-labelledby="sleepComfortHeading">
+      <div class="container-xl py-lg-4">
+        <div class="text-center mb-4 mb-lg-5">
+          <span class="text-gold text-uppercase small fw-bold letter-spacing-2 d-block mb-1">Tailored Posture Science</span>
+          <h2 id="sleepComfortHeading" class="font-serif h1 mb-2">Find Your Perfect Sleep Match</h2>
+          <p class="text-muted mx-auto" style="max-width: 600px;">
+            Every body sleeps differently. Explore our curated mattress technologies engineered to cradle your pressure points and align your spine.
+          </p>
+        </div>
+
+        <div class="row g-4 row-cols-1 row-cols-sm-2 row-cols-lg-4">
+          
+          <!-- Type 1: Pocket Sprung -->
+          <div class="col">
+            <div class="comfort-card">
+              <div class="comfort-media">
+                <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=600&q=80" alt="Pocket sprung mattress interior coils" loading="lazy">
+              </div>
+              <div class="comfort-body">
+                <h3 class="font-serif h5 mb-2">Pocket Sprung</h3>
+                <div class="firmness-meter">
+                  <span>Support:</span>
+                  <div class="firmness-dots">
+                    <span class="firmness-dot active"></span>
+                    <span class="firmness-dot active"></span>
+                    <span class="firmness-dot active"></span>
+                    <span class="firmness-dot active"></span>
+                    <span class="firmness-dot"></span>
+                  </div>
+                </div>
+                <p class="small text-muted mb-3 flex-grow-1">
+                  Individual calico-wrapped coils isolate movement so you never disturb your partner. Layered with natural breathable British wool.
+                </p>
+                <a href="shop.html?category=mattresses" class="btn btn-outline-dark btn-sm mt-auto">View Pocket Sprung</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Type 2: Memory Foam -->
+          <div class="col">
+            <div class="comfort-card">
+              <div class="comfort-media">
+                <img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=600&q=80" alt="Adaptive cooling graphite memory foam mattress" loading="lazy">
+              </div>
+              <div class="comfort-body">
+                <h3 class="font-serif h5 mb-2">Memory Foam</h3>
+                <div class="firmness-meter">
+                  <span>Support:</span>
+                  <div class="firmness-dots">
+                    <span class="firmness-dot active"></span>
+                    <span class="firmness-dot active"></span>
+                    <span class="firmness-dot active"></span>
+                    <span class="firmness-dot"></span>
+                    <span class="firmness-dot"></span>
+                  </div>
+                </div>
+                <p class="small text-muted mb-3 flex-grow-1">
+                  Thermo-regulating graphite foam contours deeply to your natural curves, dissipating heat and providing weightless pressure relief.
+                </p>
+                <a href="shop.html?category=mattresses" class="btn btn-outline-dark btn-sm mt-auto">View Memory Foam</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Type 3: Hybrid Mattresses -->
+          <div class="col">
+            <div class="comfort-card">
+              <div class="comfort-media">
+                <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=600&q=80" alt="Hybrid mattress with micro pocket coils and cooling foam" loading="lazy">
+              </div>
+              <div class="comfort-body">
+                <h3 class="font-serif h5 mb-2">Hybrid Mattresses</h3>
+                <div class="firmness-meter">
+                  <span>Support:</span>
+                  <div class="firmness-dots">
+                    <span class="firmness-dot active"></span>
+                    <span class="firmness-dot active"></span>
+                    <span class="firmness-dot active"></span>
+                    <span class="firmness-dot active"></span>
+                    <span class="firmness-dot"></span>
+                  </div>
+                </div>
+                <p class="small text-muted mb-3 flex-grow-1">
+                  The best of both realms: buoyant pocket spring dynamics blended with cooling gel comfort foams for balanced contour and lift.
+                </p>
+                <a href="shop.html?category=mattresses" class="btn btn-outline-dark btn-sm mt-auto">View Hybrid Range</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Type 4: Orthopaedic Mattresses -->
+          <div class="col">
+            <div class="comfort-card">
+              <div class="comfort-media">
+                <img src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=600&q=80" alt="Orthopaedic firm mattress for back alignment" loading="lazy">
+              </div>
+              <div class="comfort-body">
+                <h3 class="font-serif h5 mb-2">Orthopaedic Range</h3>
+                <div class="firmness-meter">
+                  <span>Support:</span>
+                  <div class="firmness-dots">
+                    <span class="firmness-dot active"></span>
+                    <span class="firmness-dot active"></span>
+                    <span class="firmness-dot active"></span>
+                    <span class="firmness-dot active"></span>
+                    <span class="firmness-dot active"></span>
+                  </div>
+                </div>
+                <p class="small text-muted mb-3 flex-grow-1">
+                  Reinforced high-tension spring matrix engineered for optimal spinal alignment, alleviating lumbar fatigue and morning stiffness.
+                </p>
+                <a href="shop.html?category=mattresses" class="btn btn-outline-dark btn-sm mt-auto">View Orthopaedic</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="text-center mt-5">
+          <a href="shop.html?category=mattresses" class="btn btn-gold px-4 py-3">
+            FIND YOUR PERFECT MATTRESS <i class="bi bi-arrow-right ms-2"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         11. BEDROOM INSPIRATION (Editorial Gallery)
+         ====================================================================== -->
+    <section class="py-5 bg-pure-white" aria-labelledby="inspirationHeading">
+      <div class="container-xl py-lg-4">
+        <div class="text-center mb-4 mb-lg-5">
+          <span class="text-gold text-uppercase small fw-bold letter-spacing-2 d-block mb-1">Curated Interior Looks</span>
+          <h2 id="inspirationHeading" class="font-serif h1 mb-2">Bedroom Inspiration</h2>
+          <p class="text-muted mx-auto" style="max-width: 580px;">
+            Immerse yourself in four signature British aesthetic styles designed by our interior stylists.
+          </p>
+        </div>
+
+        <div class="row g-3 g-md-4 row-cols-1 row-cols-sm-2 row-cols-lg-4">
+          
+          <!-- Look 1 -->
+          <div class="col">
+            <div class="inspiration-card">
+              <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=700&q=80" alt="Modern luxury bedroom with warm lighting and king bed" loading="lazy">
+              <div class="inspiration-overlay">
+                <span class="inspiration-tag">Look 01</span>
+                <h3 class="inspiration-title font-serif">Modern Luxury</h3>
+                <p class="inspiration-caption">Rich warm ivories, tailored fluted panels, and brushed brass details.</p>
+                <a href="shop.html?category=divan-beds" class="text-white text-uppercase small fw-bold text-decoration-underline">Shop The Look</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Look 2 -->
+          <div class="col">
+            <div class="inspiration-card">
+              <img src="https://images.unsplash.com/photo-1616046229478-9901c5536a45?auto=format&fit=crop&w=700&q=80" alt="Minimalist bedroom with tactile bouclé bed" loading="lazy">
+              <div class="inspiration-overlay">
+                <span class="inspiration-tag">Look 02</span>
+                <h3 class="inspiration-title font-serif">Serene Minimalist</h3>
+                <p class="inspiration-caption">Uncluttered lines, natural textured bouclé, and soft taupe tones.</p>
+                <a href="shop.html?category=ottoman-beds" class="text-white text-uppercase small fw-bold text-decoration-underline">Shop The Look</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Look 3 -->
+          <div class="col">
+            <div class="inspiration-card">
+              <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=700&q=80" alt="Classic upholstered bedroom with deep buttoned velvet headboard" loading="lazy">
+              <div class="inspiration-overlay">
+                <span class="inspiration-tag">Look 03</span>
+                <h3 class="inspiration-title font-serif">Classic Upholstered</h3>
+                <p class="inspiration-caption">Heritage capitonné tufting and tactile Italian brushed velvet warmth.</p>
+                <a href="shop.html?category=upholstered-beds" class="text-white text-uppercase small fw-bold text-decoration-underline">Shop The Look</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Look 4 -->
+          <div class="col">
+            <div class="inspiration-card">
+              <img src="https://images.unsplash.com/photo-1631679706909-1844bbd07221?auto=format&fit=crop&w=700&q=80" alt="Contemporary storage bedroom with clean floating base" loading="lazy">
+              <div class="inspiration-overlay">
+                <span class="inspiration-tag">Look 04</span>
+                <h3 class="inspiration-title font-serif">Storage Sanctuary</h3>
+                <p class="inspiration-caption">Concealed gas-lift cavities paired with architectural bedside joinery.</p>
+                <a href="shop.html?category=bedroom-furniture" class="text-white text-uppercase small fw-bold text-decoration-underline">Shop The Look</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         12. CUSTOMER REVIEWS (Testimonial Carousel)
+         ====================================================================== -->
+    <section class="py-5 bg-ivory" aria-labelledby="reviewsHeading">
+      <div class="container-xl py-lg-4">
+        <div class="text-center mb-4 mb-lg-5">
+          <span class="text-gold text-uppercase small fw-bold letter-spacing-2 d-block mb-1">Verified Experiences</span>
+          <h2 id="reviewsHeading" class="font-serif h1 mb-2">What Our Clients Say</h2>
+          <p class="text-muted mx-auto" style="max-width: 580px;">
+            Read reflections from homeowners across the United Kingdom who transformed their nighttime rest.
+            <span class="badge bg-cream text-charcoal border ms-1">Illustrative Demo Reviews</span>
+          </p>
+        </div>
+
+        <div class="row g-4 row-cols-1 row-cols-md-3">
+          
+          <!-- Review 1 -->
+          <div class="col">
+            <div class="review-card">
+              <div class="review-quote-icon">“</div>
+              <div class="mb-2 text-gold">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p class="review-text">
+                "The Chesterfield Divan exceeded every expectation. The velvet is sumptuous and the continental drawers glide like silk. The white-glove team carried it straight to our second-floor bedroom in Surrey without a murmur."
+              </p>
+              <div class="review-author">
+                <div>
+                  <h4 class="author-name">Lady Eleanor Worthington</h4>
+                  <span class="author-product">Guildford, Surrey &bull; Chesterfield Divan (Super King)</span>
+                </div>
+                <span class="badge bg-light text-success border"><i class="bi bi-check-circle me-1"></i>Verified</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="col">
+            <div class="review-card">
+              <div class="review-quote-icon">“</div>
+              <div class="mb-2 text-gold">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p class="review-text">
+                "As chronic lower back sufferers, the Orthopaedic 2,000 pocket mattress has genuinely restored our sleep. It provides firm spinal alignment without feeling like a plank of wood. Remarkable British craftsmanship."
+              </p>
+              <div class="review-author">
+                <div>
+                  <h4 class="author-name">Dr. Alistair MacIntyre</h4>
+                  <span class="author-product">Edinburgh &bull; Orthopaedic Pocket Sprung (King)</span>
+                </div>
+                <span class="badge bg-light text-success border"><i class="bi bi-check-circle me-1"></i>Verified</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="col">
+            <div class="review-card">
+              <div class="review-quote-icon">“</div>
+              <div class="mb-2 text-gold">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p class="review-text">
+                "The Ottoman storage is a triumph of design for our London townhome. It lifts with barely any finger effort and swallows all our winter duvets and luggage. Beautiful chalk bouclé fabric too."
+              </p>
+              <div class="review-author">
+                <div>
+                  <h4 class="author-name">Charlotte &amp; Rupert Vance</h4>
+                  <span class="author-product">Kensington, London &bull; Modern Ottoman Bed (King)</span>
+                </div>
+                <span class="badge bg-light text-success border"><i class="bi bi-check-circle me-1"></i>Verified</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         13. NEWSLETTER SECTION
+         ====================================================================== -->
+    <section class="newsletter-section" aria-labelledby="newsletterHeading">
+      <div class="container-xl">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 col-lg-6 text-center">
+            <span class="text-gold text-uppercase small fw-bold letter-spacing-2 d-block mb-2">The Sanctuary Journal</span>
+            <h2 id="newsletterHeading" class="font-serif h1 text-white mb-2">
+              Make Your Bedroom a Little More Beautiful.
+            </h2>
+            <p class="text-light opacity-75 mb-4">
+              Subscribe for exclusive private offers, seasonal design lookbooks and bedroom inspiration. Receive 10% off your inaugural order.
+            </p>
+
+            <form class="newsletter-form" novalidate>
+              <div class="newsletter-input-group mb-2">
+                <input type="email" class="form-control form-control-lg" placeholder="Enter your email address (e.g. name@domain.co.uk)" required aria-label="Email address for newsletter subscription">
+                <button type="submit" class="btn btn-gold btn-lg">SUBSCRIBE</button>
+              </div>
+              <small class="text-muted d-block mt-2">
+                We respect your privacy. Unsubscribe at any time. View our <a href="about.html" class="text-decoration-underline text-gold">Privacy Policy</a>.
+              </small>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================
+       14. FOOTER
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container-xl">
+      <div class="row g-4 g-lg-5">
+        
+        <!-- Col 1: About the Brand -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <h3 class="footer-heading">Kensington &amp; Devon</h3>
+          <p class="mb-3 text-light opacity-75">
+            Makers of bespoke British beds and sleep surfaces since 2012. Crafted by master upholsterers in West Yorkshire and Wiltshire using responsibly sourced FSC® timber and pure British wool.
+          </p>
+          <div class="d-flex gap-2 mt-3">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Shop Categories -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <h4 class="footer-heading">Shop Collections</h4>
+          <ul class="footer-links">
+            <li><a href="shop.html?category=divan-beds">Divan Beds</a></li>
+            <li><a href="shop.html?category=ottoman-beds">Ottoman Beds</a></li>
+            <li><a href="shop.html?category=upholstered-beds">Upholstered Beds</a></li>
+            <li><a href="shop.html?category=mattresses">Pocket Mattresses</a></li>
+            <li><a href="shop.html?category=headboards">Headboards</a></li>
+            <li><a href="shop.html?category=bedroom-furniture">Bedroom Furniture</a></li>
+            <li><a href="shop.html?sale=true" class="text-danger">Seasonal Sale</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Customer Care & Services -->
+        <div class="col-6 col-md-3 col-lg-3">
+          <h4 class="footer-heading">Customer Care</h4>
+          <ul class="footer-links">
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="contact.html#swatches">Complimentary Swatches</a></li>
+            <li><a href="contact.html#showrooms">Book Showroom Visit</a></li>
+            <li><a href="contact.html#faq">100-Night Sleep Trial</a></li>
+            <li><a href="contact.html#faq">White Glove Delivery</a></li>
+            <li><a href="contact.html#faq">Old Mattress Recycling</a></li>
+            <li><a href="contact.html#faq">10-Year Guarantee</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact & Flagship Showroom -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <h4 class="footer-heading">London Showroom</h4>
+          <p class="mb-1 text-light opacity-75">
+            <i class="bi bi-geo-alt text-gold me-2"></i> 24 King's Road, Chelsea<br>
+            London SW3 4UD, United Kingdom
+          </p>
+          <p class="mb-2 text-light opacity-75">
+            <i class="bi bi-telephone text-gold me-2"></i> 0800 246 8920
+          </p>
+          <p class="mb-3 text-light opacity-75">
+            <i class="bi bi-envelope text-gold me-2"></i> concierge@kensingtondevon.co.uk
+          </p>
+          <div class="p-2 border border-secondary rounded bg-dark d-inline-block small text-light">
+            <i class="bi bi-clock me-1 text-gold"></i> Showroom Open Daily 10:00 - 18:00
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <div>
+          &copy; 2026 Kensington &amp; Devon Sleep Ltd. All rights reserved. &bull; Demo Luxury Bed Store &bull; Made for United Kingdom
+        </div>
+        <div class="d-flex flex-wrap gap-2 align-items-center">
+          <span class="payment-badge"><i class="bi bi-credit-card me-1"></i> Visa</span>
+          <span class="payment-badge"><i class="bi bi-credit-card-2-front me-1"></i> Mastercard</span>
+          <span class="payment-badge"><i class="bi bi-apple me-1"></i> Apple Pay</span>
+          <span class="payment-badge"><i class="bi bi-google me-1"></i> Google Pay</span>
+          <span class="payment-badge">Klarna.</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       GLOBAL INTERACTIVE MODALS & DRAWERS
+       ======================================================================== -->
+
+  <!-- 1. Search Modal -->
+  <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content border-0 shadow-lg">
+        <div class="modal-header border-bottom py-3">
+          <div class="input-group">
+            <span class="input-group-text bg-transparent border-0 text-gold fs-4"><i class="bi bi-search"></i></span>
+            <input type="search" class="form-control border-0 fs-5 ps-1" id="globalSearchInput" placeholder="Search luxury beds, pocket mattresses, headboards..." autocomplete="off">
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-0" id="globalSearchResults" style="max-height: 480px; overflow-y: auto;">
+          <!-- Live results populated by script.js -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Account Login Modal (Mock UK Form) -->
+  <div class="modal fade" id="accountModal" tabindex="-1" aria-labelledby="accountModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0 shadow-lg">
+        <div class="modal-header border-bottom">
+          <h5 class="modal-title font-serif" id="accountModalLabel">Sign In to Your Sleep Portal</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <p class="small text-muted mb-3">Access your bespoke order status, fabric swatch history and 100-night trial tracker.</p>
+          <form id="accountLoginForm">
+            <div class="mb-3">
+              <label for="accountEmail" class="form-label small fw-semibold">Email Address</label>
+              <input type="email" class="form-control" id="accountEmail" placeholder="your.name@example.co.uk" required>
+            </div>
+            <div class="mb-3">
+              <label for="accountPassword" class="form-label small fw-semibold">Password</label>
+              <input type="password" class="form-control" id="accountPassword" placeholder="••••••••" required>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mb-4 small">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="rememberMe" checked>
+                <label class="form-check-label" for="rememberMe">Remember me</label>
+              </div>
+              <a href="#" class="text-gold text-decoration-none">Forgotten password?</a>
+            </div>
+            <button type="submit" class="btn btn-dark w-100 py-2">SIGN IN</button>
+          </form>
+          <div class="text-center mt-3 small text-muted">
+            New to Kensington &amp; Devon? <a href="#" class="text-gold fw-semibold">Create an account</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Quick View Modal -->
+  <div class="modal fade" id="quickViewModal" tabindex="-1" aria-labelledby="quickViewModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content border-0 shadow-lg">
+        <div class="modal-header border-bottom py-2 px-3">
+          <span class="small text-muted font-sans text-uppercase letter-spacing-1">Quick Specification</span>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-3 p-md-4">
+          <div class="row g-4">
+            <!-- Left: Gallery Media -->
+            <div class="col-12 col-md-6">
+              <div class="border rounded overflow-hidden mb-2" style="aspect-ratio: 1/1; background-color: #F7F4EF;">
+                <img src="" alt="" class="qv-main-image w-100 h-100" style="object-fit: cover;">
+              </div>
+              <div class="d-flex gap-2 qv-thumbnails">
+                <!-- Thumbs injected by script.js -->
+              </div>
+            </div>
+
+            <!-- Right: Details, Variations, Actions -->
+            <div class="col-12 col-md-6 d-flex flex-column">
+              <div>
+                <span class="qv-product-badge"></span>
+                <span class="qv-product-category d-block small text-muted text-uppercase mb-1"></span>
+                <h3 class="qv-product-title font-serif h4 mb-2"></h3>
+                <div class="qv-product-rating mb-2"></div>
+                <div class="d-flex align-items-baseline gap-2 mb-3">
+                  <span class="qv-product-price font-serif fs-3 fw-bold text-charcoal"></span>
+                  <del class="qv-product-old-price text-muted small"></del>
+                </div>
+                <p class="qv-product-desc small text-muted mb-3"></p>
+              </div>
+
+              <!-- Variation: Sizes -->
+              <div class="mb-3">
+                <div class="qv-sizes-container"></div>
+              </div>
+
+              <!-- Variation: Colours -->
+              <div class="mb-3">
+                <div class="qv-colours-container"></div>
+              </div>
+
+              <!-- Quantity and Add to Cart -->
+              <div class="d-flex gap-2 align-items-center mt-auto pt-3 border-top">
+                <div class="quantity-stepper">
+                  <button type="button" class="qv-qty-minus">-</button>
+                  <input type="text" class="qv-qty-input" value="1" readonly>
+                  <button type="button" class="qv-qty-plus">+</button>
+                </div>
+                <button type="button" class="btn btn-gold flex-grow-1 qv-add-to-cart-btn">
+                  <i class="bi bi-bag-plus me-1"></i> ADD TO BASKET
+                </button>
+              </div>
+
+              <div class="mt-2 text-center">
+                <a href="#" class="qv-product-link small text-muted text-decoration-underline">
+                  View Full Product Specifications &amp; Guarantee <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. Shopping Basket Offcanvas Drawer -->
+  <div class="offcanvas offcanvas-end cart-drawer" tabindex="-1" id="cartDrawer" aria-labelledby="cartDrawerLabel">
+    <div class="offcanvas-header cart-drawer-header">
+      <div class="d-flex align-items-center gap-2">
+        <i class="bi bi-bag fs-5 text-gold"></i>
+        <h5 class="offcanvas-title font-serif mb-0" id="cartDrawerLabel">Shopping Basket</h5>
+      </div>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+
+    <!-- Free Delivery Notice / Progress -->
+    <div id="cartFreeDeliveryNotice" class="px-3 pt-3"></div>
+
+    <div class="offcanvas-body p-0 d-flex flex-column">
+      <!-- Empty Basket State -->
+      <div id="cartDrawerEmpty" class="text-center p-5 my-auto d-none">
+        <i class="bi bi-bag-x fs-1 text-muted opacity-50 d-block mb-3"></i>
+        <h5 class="font-serif text-charcoal mb-2">Your basket is empty</h5>
+        <p class="small text-muted mb-4">Discover our handcrafted British beds and pocket mattresses crafted for restorative sleep.</p>
+        <a href="shop.html" class="btn btn-gold" data-bs-dismiss="offcanvas">Explore Collection</a>
+      </div>
+
+      <!-- Items List -->
+      <div id="cartDrawerItems" class="flex-grow-1 overflow-auto">
+        <!-- Rendered dynamically by cart.js -->
+      </div>
+
+      <!-- Drawer Footer Summary -->
+      <div id="cartDrawerFooter" class="cart-drawer-footer">
+        <div class="d-flex justify-content-between mb-2 small">
+          <span class="text-muted">Subtotal</span>
+          <span id="cartDrawerSubtotal" class="fw-semibold text-charcoal">£0</span>
+        </div>
+        <div class="d-flex justify-content-between mb-2 small">
+          <span class="text-muted">UK Mainland Delivery</span>
+          <span id="cartDrawerDelivery" class="text-success fw-semibold">FREE</span>
+        </div>
+        <div class="d-flex justify-content-between mb-3 border-top pt-2">
+          <span class="fw-bold font-serif text-charcoal fs-5">Total (GBP)</span>
+          <span id="cartDrawerTotal" class="fw-bold font-serif fs-5 text-charcoal">£0</span>
+        </div>
+        <button type="button" class="btn btn-gold w-100 py-3 mb-2" id="btnProceedCheckout">
+          PROCEED TO CHECKOUT <i class="bi bi-lock-fill ms-1"></i>
+        </button>
+        <button type="button" class="btn btn-outline-dark btn-sm w-100" data-bs-dismiss="offcanvas">
+          Continue Shopping
+        </button>
+        <div class="mt-3 text-center">
+          <span class="small text-muted"><i class="bi bi-shield-check text-gold me-1"></i> 256-Bit SSL Encrypted UK Checkout</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. Wishlist Offcanvas Drawer -->
+  <div class="offcanvas offcanvas-end cart-drawer" tabindex="-1" id="wishlistDrawer" aria-labelledby="wishlistDrawerLabel">
+    <div class="offcanvas-header cart-drawer-header">
+      <div class="d-flex align-items-center gap-2">
+        <i class="bi bi-heart fs-5 text-gold"></i>
+        <h5 class="offcanvas-title font-serif mb-0" id="wishlistDrawerLabel">Saved to Wishlist</h5>
+      </div>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body p-0 d-flex flex-column">
+      <div id="wishlistDrawerEmpty" class="text-center p-5 my-auto d-none">
+        <i class="bi bi-heart fs-1 text-muted opacity-50 d-block mb-3"></i>
+        <h5 class="font-serif text-charcoal mb-2">Your wishlist is empty</h5>
+        <p class="small text-muted mb-4">Click the heart icon on any bed or mattress to save your favourite finishes.</p>
+        <a href="shop.html" class="btn btn-gold" data-bs-dismiss="offcanvas">Browse Products</a>
+      </div>
+      <div id="wishlistDrawerItems" class="flex-grow-1 overflow-auto">
+        <!-- Rendered dynamically by cart.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 6. UK Checkout Simulation Modal -->
+  <div class="modal fade" id="checkoutModal" tabindex="-1" aria-labelledby="checkoutModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content border-0 shadow-lg">
+        <div class="modal-header border-bottom py-3">
+          <div class="d-flex align-items-center gap-2">
+            <i class="bi bi-shield-lock-fill text-gold fs-4"></i>
+            <div>
+              <h5 class="modal-title font-serif mb-0" id="checkoutModalLabel">Secure UK Express Checkout</h5>
+              <span class="small text-muted">2-Person White Glove Room-of-Choice Delivery</span>
+            </div>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4" id="checkoutModalBody">
+          <form id="checkoutForm">
+            <div class="row g-3">
+              <div class="col-12 col-md-7">
+                <h6 class="font-serif fw-bold text-charcoal mb-3">1. UK Delivery Destination</h6>
+                <div class="row g-2 mb-3">
+                  <div class="col-12">
+                    <label class="form-label small fw-semibold" for="checkoutName">Full Name</label>
+                    <input type="text" class="form-control form-control-sm" id="checkoutName" required placeholder="e.g. Eleanor Vance">
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <label class="form-label small fw-semibold" for="checkoutEmail">Email Address</label>
+                    <input type="email" class="form-control form-control-sm" id="checkoutEmail" required placeholder="eleanor@example.co.uk">
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <label class="form-label small fw-semibold" for="checkoutPhone">UK Contact Telephone</label>
+                    <input type="tel" class="form-control form-control-sm" id="checkoutPhone" required placeholder="07123 456789">
+                  </div>
+                </div>
+
+                <div class="row g-2 mb-3">
+                  <div class="col-12 col-sm-6">
+                    <label class="form-label small fw-semibold" for="checkoutPostcode">UK Postcode</label>
+                    <input type="text" class="form-control form-control-sm text-uppercase font-monospace" id="checkoutPostcode" required placeholder="SW1A 1AA">
+                  </div>
+                  <div class="col-12 col-sm-6 d-flex align-items-end">
+                    <button type="button" class="btn btn-outline-dark btn-sm w-100" onclick="document.getElementById('checkoutAddress').value = '10 Downing Street, Westminster';">
+                      Lookup UK Address
+                    </button>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label small fw-semibold" for="checkoutAddress">Street Address</label>
+                    <input type="text" class="form-control form-control-sm" id="checkoutAddress" required placeholder="House number and street name">
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <label class="form-label small fw-semibold" for="checkoutTown">Town / City</label>
+                    <input type="text" class="form-control form-control-sm" id="checkoutTown" required placeholder="London">
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <label class="form-label small fw-semibold" for="checkoutCounty">County</label>
+                    <input type="text" class="form-control form-control-sm" id="checkoutCounty" placeholder="Greater London">
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label small fw-semibold" for="checkoutNotes">Delivery Notes (Room floor level, tight stairs, parking restrictions)</label>
+                  <textarea class="form-control form-control-sm" id="checkoutNotes" rows="2" placeholder="e.g. Master bedroom on 2nd floor, lift available."></textarea>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-5">
+                <div class="bg-ivory p-3 rounded border">
+                  <h6 class="font-serif fw-bold text-charcoal mb-2">Order Summary</h6>
+                  <ul class="list-unstyled mb-3" id="checkoutModalItems">
+                    <!-- Populated dynamically -->
+                  </ul>
+                  <div class="d-flex justify-content-between small mb-1">
+                    <span class="text-muted">Subtotal</span>
+                    <span id="checkoutModalSubtotal" class="fw-semibold">£0</span>
+                  </div>
+                  <div class="d-flex justify-content-between small mb-1">
+                    <span class="text-muted">White-Glove UK Delivery</span>
+                    <span id="checkoutModalDelivery" class="text-success fw-semibold">FREE</span>
+                  </div>
+                  <div class="d-flex justify-content-between border-top pt-2 mt-2">
+                    <strong class="font-serif fs-5">Total (GBP)</strong>
+                    <strong id="checkoutModalTotal" class="font-serif fs-5 text-gold">£0</strong>
+                  </div>
+                  <div id="checkoutModalKlarna" class="small text-muted fst-italic mt-2"></div>
+                </div>
+
+                <div class="mt-3">
+                  <label class="form-label small fw-semibold">Payment Option</label>
+                  <div class="d-flex flex-column gap-2">
+                    <div class="form-check p-2 border rounded bg-white">
+                      <input class="form-check-input ms-0 me-2" type="radio" name="paymentOption" id="payCard" checked>
+                      <label class="form-check-label small fw-semibold" for="payCard">
+                        Credit / Debit Card (Visa, Mastercard, Amex)
+                      </label>
+                    </div>
+                    <div class="form-check p-2 border rounded bg-white">
+                      <input class="form-check-input ms-0 me-2" type="radio" name="paymentOption" id="payKlarna">
+                      <label class="form-check-label small fw-semibold" for="payKlarna">
+                        Klarna (Pay in 3 interest-free instalments)
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-gold w-100 py-3 mt-3">
+                  CONFIRM &amp; PLACE ORDER
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button id="backToTopBtn" class="back-to-top" title="Back to top" aria-label="Back to top">
+    <i class="bi bi-chevron-up"></i>
+  </button>
+
+  <!-- ========================================================================
+       SCRIPTS (Bootstrap 5 JS, Product Catalog, Cart, Script)
+       ======================================================================== -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
